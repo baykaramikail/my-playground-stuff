@@ -3,5 +3,6 @@
     <pages>
         <page name='related to POP'/>
         <page name='Property wrappers'/>
+        <page name='Memory management'/>
     </pages>
 </playground>
