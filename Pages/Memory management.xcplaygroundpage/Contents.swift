@@ -3,7 +3,7 @@ import Foundation
 /*
 class Person {
     var name: String
-    var pet: Cat?
+    weak var pet: Cat?
     
     init(name: String){
         self.name = name
@@ -44,7 +44,7 @@ enum CarTypes{
 
 class Person {
     var name: String
-    var car: Car?
+    weak var car: Car?
     
     init(name: String){
         self.name = name
@@ -75,12 +75,5 @@ var mikail: Person? = Person(name: "mikail")
 var navara: Car? = Car(name:"Navara", type: .offroad, owner: mikail!)
 
 mikail?.car = navara
-navara?.owner = mikail
-
-mikail = nil
-
-// PRINTS: "mikail removed".
-// The code at line 77 and 78 causes a retain cyle that causes memory leak. To prevent the retain cycle we need to break the strong reference between mikail and navara by making Car's owner weak.
-
-
+navara = nil
 
