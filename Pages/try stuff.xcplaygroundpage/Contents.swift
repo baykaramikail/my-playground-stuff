@@ -13,3 +13,4 @@ let type = RequstTypes.delete
 print(type)
 
 
+print("this goes to main")
