@@ -1,11 +1,15 @@
 import Foundation
 
-func spinWords(in sentence: String) -> String {
-    sentence
-        .split(separator: " ")
-        .map { "\($0)" }
-        .map { $0.count > 4 ? String($0.reversed()) : $0 }
-        .joined(separator: " ")
+enum RequstTypes: String {
+    case get = "ben"
+    case put = "sen"
+    case post = "o"
+    case delete = "biz"
 }
+
+
+let type = RequstTypes.delete
+
+print(type)
 
 
