@@ -1,6 +1,6 @@
 import Foundation
 
-func spinWords(in sentence: String) -> String {
+func Spinwords(in sentence: String) -> String {
     sentence
         .split(separator: " ")
         .map { "\($0)" }
